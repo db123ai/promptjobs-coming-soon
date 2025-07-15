@@ -16,11 +16,15 @@
       max-width: 180px;
       margin-bottom: 20px;
     }
+    .content {
+      max-width: 500px;
+      margin: 0 auto;
+    }
     h1 {
       font-size: 2rem;
       margin-bottom: 10px;
     }
-    p {
+    p.subtitle {
       font-size: 1.2rem;
       margin-bottom: 20px;
     }
@@ -39,6 +43,7 @@
       margin-bottom: 15px;
       border: 1px solid #ddd;
       border-radius: 5px;
+      display: block;
     }
     button {
       width: 100%;
@@ -57,41 +62,43 @@
 </head>
 <body>
 
-  <!-- ✅ Logo (replace URL later with your real one) -->
+  <!-- ✅ Logo (placeholder for now) -->
   <img 
     src="https://dummyimage.com/600x600/5e17eb/ffffff&text=PromptJobs.ai+Logo" 
     alt="PromptJobs.ai Logo" 
     class="logo"
   />
 
-  <h1>🚀 PromptJobs.ai is Coming Soon</h1>
-  <p>Be the first to know when remote Prompt Engineering roles go live.</p>
+  <div class="content">
+    <h1>PromptJobs.ai is Coming Soon</h1>
+    <p class="subtitle">Be the first to know when remote Prompt Engineering roles go live.</p>
 
-  <div class="subscribe-box">
-    <!-- ✅ ConvertKit Form -->
-    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
-    <form 
-      action="https://app.kit.com/forms/8288863/subscriptions" 
-      class="seva-form formkit-form" 
-      method="post"
-      data-sv-form="8288863"
-      data-uid="b3af5e87e8"
-      data-format="inline"
-      data-version="5"
-    >
-      <input 
-        type="email" 
-        name="email_address" 
-        placeholder="Enter your email" 
-        required 
-      />
-      <button type="submit">Join the Waitlist</button>
-    </form>
+    <div class="subscribe-box">
+      <!-- ✅ ConvertKit Form -->
+      <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+      <form 
+        action="https://app.kit.com/forms/8288863/subscriptions" 
+        class="seva-form formkit-form" 
+        method="post"
+        data-sv-form="8288863"
+        data-uid="b3af5e87e8"
+        data-format="inline"
+        data-version="5"
+      >
+        <input 
+          type="email" 
+          name="email_address" 
+          placeholder="Enter your email" 
+          required 
+        />
+        <button type="submit">Join the Waitlist</button>
+      </form>
+    </div>
+
+    <p style="margin-top:20px; font-size:0.9rem; color:#666;">
+      Only real opportunities. Unsubscribe anytime.
+    </p>
   </div>
-
-  <p style="margin-top:20px; font-size:0.9rem; color:#666;">
-    Only real opportunities. Unsubscribe anytime.
-  </p>
 
 </body>
 </html>
