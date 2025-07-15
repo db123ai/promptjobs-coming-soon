@@ -10,78 +10,74 @@
       background: #f9f9f9;
       color: #333;
       text-align: center;
-      padding: 50px;
+      padding: 40px;
     }
-
     .logo {
-      max-width: 180px;
-      margin-bottom: 20px;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-
-    .subscribe-box {
-      max-width: 400px;
-      margin: 0 auto;
-      background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    input[type="email"] {
-      width: 90%;
-      max-width: 360px;
-      padding: 14px;
-      font-size: 1rem;
-      margin-bottom: 15px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      box-sizing: border-box;
+      max-width: 150px;
+      margin-bottom: 25px;
       display: block;
       margin-left: auto;
       margin-right: auto;
     }
-
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin: 0 0 10px 0;
+    }
+    p.subheading {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #555;
+    }
+    .subscribe-box {
+      max-width: 380px;
+      margin: 0 auto;
+      background: white;
+      padding: 18px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      font-size: 1rem;
+      margin-bottom: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
     button {
-      display: block;
-      width: 90%;
-      max-width: 360px;
-      padding: 14px;
-      background: #5e17eb; /* purple button */
+      width: 100%;
+      padding: 12px;
+      background: #5e17eb; /* purple */
       color: white;
       font-size: 1rem;
       border: none;
-      border-radius: 8px;
+      border-radius: 5px;
       cursor: pointer;
-      margin-left: auto;
-      margin-right: auto;
+      transition: background 0.3s ease;
     }
-
     button:hover {
       background: #4a13c4;
+    }
+    .footer-note {
+      margin-top: 15px;
+      font-size: 0.85rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
 
-  <!-- ✅ Logo -->
+  <!-- ✅ Real Logo -->
   <img 
-    src="https://dummyimage.com/600x600/5e17eb/ffffff&text=PromptJobs.ai+Logo" 
+    src="https://raw.githubusercontent.com/db123ai/promptjobs-coming-soon/main/promptjobs-logo.png" 
     alt="PromptJobs.ai Logo" 
     class="logo"
   />
 
   <h1>PromptJobs.ai is Coming Soon</h1>
-  <p>Be the first to know when remote Prompt Engineering roles go live.</p>
+  <p class="subheading">Be the first to know when remote Prompt Engineering roles go live.</p>
 
   <div class="subscribe-box">
     <!-- ✅ ConvertKit Form -->
@@ -105,9 +101,7 @@
     </form>
   </div>
 
-  <p style="margin-top:20px; font-size:0.9rem; color:#666;">
-    Only real opportunities. Unsubscribe anytime.
-  </p>
+  <p class="footer-note">Only real opportunities. Unsubscribe anytime.</p>
 
 </body>
 </html>
